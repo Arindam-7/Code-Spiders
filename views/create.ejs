@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/create.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/create/save" method="POST">
+    <label for="title">Title: </label><br>
+    <input type="text" name="title" autocomplete="off" value=""> <br> <br>
+    <input type="text" readonly name="date" value="<%= date %>"> <br>
+    <label for="link">Link:  </label><br>
+    <input type="text" name="link" autocomplete="off" value=""> <br>
+    <label for="description">Description: </label><br>
+    <textarea name="description" style="resize:none" id="" cols="30" rows="10"></textarea> <br>
+    <label for="author">Author: </label><br>
+    <input type="text" readonly name="author" autocomplete="off" value="<%=author%>"> <br>
+    <button type="submit">Add</button>
+    </form>
+    
+</body>
+</html>
+
