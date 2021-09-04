@@ -22,6 +22,7 @@ h1 {
 .container .card{
     position: relative;
     cursor: pointer;
+    border-style: hidden;
 }
 
 .container .card .face{
@@ -41,7 +42,8 @@ h1 {
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    /* background: #ff0057; */
+    background: blue;
     transform: translateY(0);
 }
 

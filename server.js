@@ -253,5 +253,11 @@ app.post("/edit/delete", (req,res) => {
         res.redirect("/")
     })
 })
-
+app.get("/user",(req,res) => {
+    Note.find({author:req.user.username}, (err,result) => {
+        if(err) throw err
+        res.render("user.ejs", {notes:result})
+    })
+   
+})
 app.listen(8080)
