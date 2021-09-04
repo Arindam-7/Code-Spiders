@@ -33,22 +33,25 @@ h1 {
 
 .container .card .face.face1{
     position: relative;
-    background: #333;
+    background: #fdfd96;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container .card:hover .face.face1{
     /* background: #ff0057; */
-    background: blue;
+    background: #fffacd;
     transform: translateY(0);
 }
 
 .container .card .face.face1 .content{
-    opacity: 0.2;
+    opacity: 1;
     transition: 0.5s;
 }
 
@@ -58,14 +61,14 @@ h1 {
 
 .content-desc p{
     font-size: 12px;
-    color: #fff;
+    color: black;
     opacity: 0.9;
 }
 
 .container .card .face.face1 .content h3{
     margin: 5px 0 0;
     padding: 0;
-    color: #fff;
+    color: black;
     text-align: center;
     font-weight: 600;
     font-size: 25px;
@@ -133,7 +136,7 @@ body {
 .left {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: #1aa1f5;
+    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +159,7 @@ body {
 }
 
 .right {
+    background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80');
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     position: relative;
@@ -232,6 +236,8 @@ body {
 }
 
 .middle-content h1 {
+    font-weight:bolder;
+    color: green;
     font-size: 2.8rem;
     margin-bottom: 4rem;
     line-height: 4rem;
@@ -253,20 +259,34 @@ body {
 }
 
 .sign-up {
-    background-color: #1aa1f5;
-    color: white;
+    border-radius: 10px;
+    font-size: large;
+    text-decoration-line: none;
+    text-align: center;
+    width: 10vw;
+    height: 3vh;
+    background-color: #fdfd96;
+    color: blue;
 }
 
 .sign-up:hover {
-    background-color: #0f5d8d;
+    text-decoration-line: underline;
+    background-color: darkorange;
 }
 
 .log-in {
+    width: 10vw;
+    height: 3vh;
+    text-decoration-line: none;
+    text-align: center;
+    font-size: large;
     background-color: white;
+    color: blue;
 }
 
 .log-in:hover {
-    background-color: #d9ebf7;
+    background-color: #ffffd1;
+    text-decoration-line: underline;
 }
 
 .main-page-footer {
