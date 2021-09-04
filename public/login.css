@@ -1,27 +1,34 @@
+* {
+    overflow-x: hidden;
+    background-color: black;
+    color: yellow;
+}
+
 .login-page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    /* display: grid;
+    display: grid;
     grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
     grid-template-rows: repeat(2, min-content) 1fr;
-    grid-row-gap: 1.5rem; */
+    grid-row-gap: 1.5rem;
 }
 
 .login {
-    grid-column: 2 / 3;
-    grid-row-gap: 2 / 3;
-    background-color: white;
-    width: 100rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    grid-column: 1 / 3;
+    grid-row-gap: 1 / 3;
+    background-color: black;
+    width: 100vw;
     display: grid;
     grid-template-columns: 10rem 8fr;
     grid-template-rows: 2fr 1fr;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
 }
 
 .login-content {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
-    padding: 5rem 0 1rem 0;
+    padding: 50px 0 16px 0;
 }
 
 .login-content h2 {
@@ -36,10 +43,10 @@
 }
 
 .login-form input{
-    width: 150px;
+    width: 300px;
     height: 30px;
     margin-bottom: 1rem;
-    border: 0.1rem solid #ddd;
+    border: 0.1rem solid yellow;
     border-radius: 0.5rem;
     padding-left: 1rem;
     font-size: 1.5rem;
@@ -47,16 +54,17 @@
 }
 
 .login-form input:focus {
-    background-color: #d9ebf7;
+    background-color: yellow;
+    color: black;
 }
 
 .login-form button {
     max-width: 20%;
     padding: 1rem 1.5rem;
-    color: white;
-    background-color: #1aa1f5;
+    color: black;
+    background-color: yellow;
     border-radius: 15px;
-    border: 0.1rem solid #1aa1f5;
+    border: 0.1rem solid black;
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 1rem;
@@ -72,7 +80,7 @@
 .login-footer {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
-    background-color: #edf3f7;
+    background-color: black;
     padding-left: 10rem;
     display: flex;
     flex-direction: column;
@@ -89,4 +97,11 @@
 .login-footer a {
     text-decoration: none;
     color: #1aa1f5;
+}
+
+.main-page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
