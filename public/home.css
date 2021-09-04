@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    outline: none;
+}
+
 h1 {
     color: blue;
 }
@@ -110,12 +117,6 @@ h1 {
     color: #fff;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", sans-serif;
-    outline: none;
-}
 
 html {
     font-size: 62.5%;
@@ -136,7 +137,7 @@ body {
 .left {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: green;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,8 +146,8 @@ body {
 .left-content div{
     display: flex;
     align-items: center;
-    margin: 4rem;
-    color: white;
+    margin: 2rem;
+    color: yellow;
 }
 
 .left-content i {
@@ -155,11 +156,24 @@ body {
 }
 
 .left-content-heading {
-    font-size: 2rem;
+
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.bg-image{
+    background-image: url('https://images.unsplash.com/photo-1596496356933-e55641d98edf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    position: relative;
+    filter: blur(5px);
 }
 
 .right {
-    background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80');
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     position: relative;
@@ -227,7 +241,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 40%;
+
 }
+
 
 .middle-content i {
     font-size: 4rem;
@@ -236,16 +252,20 @@ body {
 }
 
 .middle-content h1 {
+    background-color:yellow;
+    border-radius: 5px;
     font-weight:bolder;
-    color: green;
-    font-size: 2.8rem;
+    color: black;
+    font-size: 3rem;
     margin-bottom: 4rem;
     line-height: 4rem;
+    padding: 20px;
 }
 
 .middle-content h4 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    margin-left: 60px;
 }
 
 .middle-content button {
@@ -259,6 +279,7 @@ body {
 }
 
 .sign-up {
+    margin-bottom: 0.8rem;
     border-radius: 10px;
     font-size: large;
     text-decoration-line: none;
@@ -267,26 +288,33 @@ body {
     height: 3vh;
     background-color: #fdfd96;
     color: blue;
+    transition: transform .2s;
+    margin-left: 90px;
 }
 
 .sign-up:hover {
     text-decoration-line: underline;
     background-color: darkorange;
+    transform: scale(1.15);
 }
 
 .log-in {
     width: 10vw;
     height: 3vh;
+    border-radius: 10px;
     text-decoration-line: none;
     text-align: center;
     font-size: large;
     background-color: white;
     color: blue;
+    transition: transform .2s;
+    margin-left: 90px;
 }
 
 .log-in:hover {
-    background-color: #ffffd1;
+    background-color: darkorange;
     text-decoration-line: underline;
+    transform: scale(1.15);
 }
 
 .main-page-footer {
@@ -534,6 +562,8 @@ body {
     .left-content {
         width: 50%;
         margin: auto;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .left-content h1 {

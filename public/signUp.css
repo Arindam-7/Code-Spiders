@@ -1,3 +1,45 @@
+* {
+    font-family: Verdana;
+    overflow-x: hidden;
+    background-color: green;
+    color: white;
+}
+
 h1 {
-    color:red;
+    color:white;
+}
+
+.form input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 1rem;
+    border: 0.1rem solid yellow;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.form button{
+    max-width: 20%;
+    padding: 1rem 1.5rem;
+    color: black;
+    background-color: yellow;
+    border-radius: 15px;
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.heading{
+    display: block;
+    text-align: center;
+}
+
+.form{
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    padding: 50px 0 16px 0;
 }
