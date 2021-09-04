@@ -178,7 +178,7 @@ app.get('/auth/google/callback',
 app.get("/", async (req,res) => {
     let logged = true
     if(!req.isAuthenticated()) {
-        logged = false
+        logged= false
     }
     let username;
     if(req.user){
@@ -207,7 +207,7 @@ app.get("/logout", (req,res) => {
 })
 app.get("/create",ensureAuthenticated, (req,res) => {
     let date = new Date().toLocaleDateString()
- 
+    let username= req.user.username
     res.render("create.ejs", {date:date, author:username})
 } )
 app.post("/create/save", (req,res) => {
@@ -240,7 +240,7 @@ app.post("/edit/save", (req,res) => {
     Note.findByIdAndUpdate(req.body.id,{
         title:req.body.title,
         date:req.body.date,
-        links:req.body.links,
+        links:req.body.link,
         description:req.body.description,
     },(err,data) => {
         if(err) throw err

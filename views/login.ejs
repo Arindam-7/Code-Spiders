@@ -9,13 +9,80 @@
 </head>
 <body>
     
-    <form action="/login/auth" method="POST">
-        <label for="username">Username: </label><br>
-        <input type="text" name="username"> <br>
-        <label for="password">Password: </label> <br>
-        <input type="password" name="password"> <br>
-        <button type="submit">Log In</button>
-        </form>
+  
+         <!--main page-->
+    <section class="main-page">
+        <!--left-->
+        <div class="left">
+          <div class="left-content">
+            <div>
+              <i class="fa fa-search"></i>
+              <h3 class="left-content-heading">Welcome to Coding Spiders App</h3>
+            </div>
+            <div>
+              <i class="fa fa-users"></i>
+              <h3 class="left-content-users">Track your learning journey!</h3>
+            </div>
+            <div>
+              <i class="fa fa-comment"></i>
+              <h3 class="left-content-heading">Join the people</h3>
+            </div>
+          </div>
+        </div>
+        <!--end of left-->
+  
+        <!--right-->
+        <!-- <div class="right">
+            <form class="right-content-form">
+              <input type="text" class="user-info" placeholder="Phone, email, or username">
+              <div>
+                <input type="password" class="password" placeholder="Password">
+                <label>Forgot Password?</label>
+              </div> -->
+              <!-- <button type="button" class="btn-top">Log In</button>
+            </form> -->
+            <div class="middle-content">
+              <i class="fa fa-twitter"></i>
+              <h1>Track what you and your friends are learning online!</h1>
+            </div>
+        </div>
+        <!--end of right-->
+      </section>
+      <!--end of main page-->
+  
+  
+      <!--login page-->
+      <section class="login-page">
+  
+        <!--login-->
+        <div class="login">
+          <div class="login-content">
+            <h2>Log in to Code Sniper</h2>
+            <!-- <form class="login-form">
+              <input class="login-user-info" type="text" placeholder="Phone, Email or Username">
+              <input class="login-password" type="password" placeholder="Password">
+              <div>
+                <button type="button" class="login-form-btn">Log In</button>
+                <input type="checkbox" class="login-form-checkbox" id="check">
+                <label for="check">Remember me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+            </form> -->
+            <form action="/login/auth" method="POST">
+                <label for="username">Username: </label><br>
+                <input type="text" name="username"> <br>
+                <label for="password">Password: </label> <br>
+                <input type="password" name="password"> <br>
+                <button type="submit">Log In</button>
+                </form>
+          </div>
+          <footer class="login-footer">
+            <p>New to Code Snipers App? <a href="/sign-up">Sign up now</a></p>
+          </footer>
+        </div>
+        <!--end of login-->
+  
+      </section>
 
 </body>
 </html>
