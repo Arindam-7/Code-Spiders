@@ -40,7 +40,7 @@
             <div class="bg-image"></div>
             <div class="middle-content">
                 <h1>Track what you and your friends are learning online.</h1>
-                <h4>Join Code Snipers today!</h4>
+                <h4>Join Code Spiders today!</h4>
                 <a href="/sign-up" class="sign-up">Sign Up</a>
                 <a href="/login" class="log-in">Log In</a>
             </div>
@@ -51,11 +51,19 @@
 
        <%if(logged){ %>
         <div class="after-login">
-          <h1>Welcome <%=author%> </h1>
-          <p>Now you're logged in, you can add or edit your posts and see the others' </p>
-          <a href="/logout">Logout</a><br>
-          <a href="/create">Create a post</a>
-          <a href="/user">See your posts</a>
+          <h1>Welcome <%=author%>! </h1>
+          <p class="after-login-header-desc" style="font-size: 2rem;">Now you're logged in, you can add or edit your posts and see the others' posts </p>
+          <div class="after-login-btns">
+            <button type="button" class="btn btn-primary btn-lg">
+              <a href="/create">Create a post</a>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">            
+              <a href="/user">See your posts</a>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              <a href="/logout">Logout</a>
+            </button>
+        </div>
         </div>
       <% }%>
         
@@ -112,12 +120,15 @@
     </nav> -->
     <main>
       <%if(logged) { %>
+        <div class="search-bar">
+          <input class="input-bar" type="text"id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+        </div>
         <div class="container">
             <% notes.forEach(note => { %>
                 <div class="card">
                     <div class="face face1">
                         <div class="content">
-                            <h3><%=note.title%></h3>
+                            <h3 class="hi"><%=note.title%></h3>
                             <div class="content-desc">
                               <p><%=note.date%>></p>
                               <br><br/>
@@ -127,7 +138,7 @@
                     </div>
                     <div class="face face2">
                         <div class="content">
-                            <p><%=note.description%></p>
+                            <p class="hi"><%=note.description%></p>
                                 <a href="<%=note.links%>">Source</a>
                                 <%if(author) { %>
                                     <% if(author == note.author) { %>
@@ -150,7 +161,39 @@
     </main> 
 
   
+      <script>
+       
+          let input = document.getElementById("myInput")
+          let notes = document.getElementsByClassName("hi")
+          
+          let AllNotes = document.getElementsByClassName("card")
+          console.log(notes)
+          function search() {
+
       
+          // for (let i = 0; i < notes.length; i++) { 
+          //   if (!notes[i].textContent.includes(input.value)) {
+          //   AllNotes[i].style.display="none";
+          //   }
+          //   else {
+          //   AllNotes[i].style.display="block";                 
+          //   }
+          let h3 = notes.getElementsByTagName("h3");
+          let p = notes.getElementsByTagName("p")
+          for (let i = 0; i < notes.length; i++) {
+            
+            let txtValue = h3.textContent
+            let pValue = p.textContent
+              if (txtValue.indexOf(input.value) > -1 || pValue.indexOf(input.value) > -1) {
+                notes[i].style.display = "block";
+              } else {
+                notes[i].style.display = "none";
+              }
+          }
+    }
+
+        
+      </script>
   
 </body>
 </html>

@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/create.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create a post</title>
 </head>
 <body>
-    <form action="/create/save" method="POST">
-    <label for="title">Title: </label><br>
-    <input type="text" name="title" autocomplete="off" value=""> <br> <br>
-    <input type="text" readonly name="date" value="<%= date %>"> <br>
-    <label for="link">Link:  </label><br>
-    <input type="text" name="link" autocomplete="off" value=""> <br>
-    <label for="description">Description: </label><br>
-    <textarea name="description" style="resize:none" id="" cols="30" rows="10"></textarea> <br>
-    <label for="author">Author: </label><br>
-    <input type="text" readonly name="author" autocomplete="off" value="<%=author%>"> <br>
-    <button type="submit">Add</button>
-    </form>
-    
+    <div class="container">  
+        <form id="contact" action="/create/save" method="post">
+          <h3>Create a post</h3>
+          <fieldset>
+            <input placeholder="Title" name="title" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input type="text" readonly name="date" value="<%= date %>">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Link" name="link" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Description" name="description" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input type="text" readonly name="author" autocomplete="off" value="<%=author%>"> 
+          </fieldset>
+          <button type="submit">Add</button>
+        </form>
+      </div>
 </body>
 </html>
 

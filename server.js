@@ -50,7 +50,7 @@ passport.deserializeUser((id, done) => {
 
 let noteSchema = new mongoose.Schema({
     title:String,
-    date:{type:Date,default:new Date().toLocaleDateString()},
+    date:String,
     links: String,
     description: String,
     author:String
@@ -205,8 +205,8 @@ app.get("/logout", (req,res) => {
     req.logout();
     res.redirect("/")
 })
-app.get("/create",ensureAuthenticated, (req,res) => {
-    let date = new Date().toLocaleDateString()
+app.get("/create",ensureAuthenticated, async(req,res) => {
+    let date = await new Date().toLocaleDateString()
     let username= req.user.username
     res.render("create.ejs", {date:date, author:username})
 } )
