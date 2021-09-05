@@ -38,7 +38,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/a/2GrokSC)
+[Screenshot ](https://imgur.com/a/2GrokSC)
 
 Cognitive delay, forgetting what you learned and from where you learned it?
 
@@ -111,9 +111,13 @@ Your app should now be running on [localhost:8080](http://localhost:8080/).
 
 ## Screenshots
 
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/a/nQvXUHu)
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/Ps67wGY)
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/ItYMtfS)
+[Screenshot 1](https://imgur.com/a/nQvXUHu)
+
+
+[Screenshot 2](https://imgur.com/Ps67wGY)
+
+
+[Screenshot 3](https://imgur.com/ItYMtfS)
 
 
 
