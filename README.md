@@ -105,12 +105,15 @@ Your app should now be running on [localhost:8080](http://localhost:8080/).
 
 ## Video Demo
 
-[Video Demo](https://example.com)_
+[Video Demo](https://example.com)
 
 
 
 ## Screenshots
 
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/a/nQvXUHu)
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/Ps67wGY)
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/ItYMtfS)
 
 
 
@@ -130,7 +133,7 @@ Arindam Saha - itsnotarindam@gmail.com
 
 Luca Lamorte - lamorteluca86@gmail.com
 
-Hritik Bakshi - hritikb
+Hritik Bakshi - hritikb27@gmail.com
 
 Project Link: [https://github.com/Arindam-7/code-spiders.git](https://github.com/Arindam-7/code-spiders.git)
 
