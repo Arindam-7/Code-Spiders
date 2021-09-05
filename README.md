@@ -105,7 +105,7 @@ Your app should now be running on [localhost:8080](http://localhost:8080/).
 
 ## Video Demo
 
-[Video Demo](https://example.com)
+[Video Demo](https://www.youtube.com/watch?v=arHktS6CkvE)
 
 
 
