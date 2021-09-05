@@ -187,12 +187,14 @@ main{
     background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 15px;
 }
 
 .left-content div{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 2rem;
     color: yellow;
 }
